@@ -1,5 +1,5 @@
-var player = function() {
-    var playerName = '';
+define([], function() {
+var playerName = '';
     
     function logPlayer() {
         console.log('The current player is : ' + playerName + ' ');
@@ -19,4 +19,4 @@ var player = function() {
         getName: getName
     };
 
-}();
+});

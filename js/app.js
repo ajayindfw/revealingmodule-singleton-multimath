@@ -1,6 +1,6 @@
-(function() {
+define(["./player", "./game"], function(player, game) {
 
-    console.log('Starting Multimath with IIFE');
+    console.log('Starting Multimath with AMD format: RequireJS loader');
     
     // add click handler to start game button
     document.getElementById('startGame').addEventListener('click', function() {
@@ -15,4 +15,4 @@
 
     // set default number of problems.
     document.getElementById('problemCount').value = game.getProblemCount();
-})();
+});
