@@ -24,8 +24,4 @@ function updateScoreboard() {
 }
 
 // return public members
-
-module.exports = {
-    updateScoreboard: updateScoreboard,
-    addResult: addResult
-};
+export {updateScoreboard, addResult};

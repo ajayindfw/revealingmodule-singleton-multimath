@@ -1,18 +1,18 @@
-var player = require('./player.js');
-var game = require('./game.js');
+import assignPlayerName from './player.js';
+import {printGame, calculateScore, getProblemCount} from './game.js';
 
-console.log('Starting Multimath with CommonJS format: SystemJS loader');
+console.log('Built with webpack and babel-loader');
 
 // add click handler to start game button
 document.getElementById('startGame').addEventListener('click', function () {
-    player.setName(document.getElementById('playername').value);
-    game.printGame();
+    assignPlayerName(document.getElementById('playername').value);
+    printGame();
 });
 
 // add click handler to calculate store button
 document.getElementById('calculate').addEventListener('click', function () {
-    game.calculateScore();
+    calculateScore();
 });
 
 // set default number of problems.
-document.getElementById('problemCount').value = game.getProblemCount();
+document.getElementById('problemCount').value = getProblemCount();

@@ -1,19 +1,13 @@
 var playerName = '';
 
-function logPlayer() {
+export function logPlayer() {
     console.log('The current player is : ' + playerName + ' ');
 }
 
-function setName(name) {
+export default function setName(name) {
     playerName = name;
 }
 
-function getName() {
+export function getName() {
     return playerName;
 }
-
-module.exports = {
-    logPlayer: logPlayer,
-    getName: getName,
-    setName: setName
-};
